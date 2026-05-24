@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Crochet Studio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+
+            /* balanced pastel background */
+            background: linear-gradient(135deg, #fff7f0, #f3f0ff, #f0fff7);
+            color: #4f3b45;
+            text-align: center;
+        }
+
+        /* HEADER */
+        .hero {
+            padding: 80px 20px 30px;
+        }
+
+        h1 {
+            font-size: 44px;
+            color: #c77d8b;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #5c4a55;
+        }
+
+        .badge {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 6px 14px;
+            background: #ffffff;
+            border-radius: 20px;
+            font-size: 13px;
+
+            /* soft lavender text */
+            color: #7b6fa6;
+
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+        }
+
+        /* GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        /* CARD */
+        .card {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 22px;
+
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+            border: 1px solid #f0e6f0;
+
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #c77d8b;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #5c4a55;
+        }
+
+        /* BUTTON (PEACH + SOFT CONTRAST) */
+        .button {
+            margin-top: 12px;
+            background: #f4b6a6;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.2s ease;
+            font-size: 14px;
+        }
+
+        .button:hover {
+            background: #e89a86;
+            transform: scale(1.03);
+        }
+
+        /* FOOTER */
+        .footer {
+            margin: 50px 0 30px;
+            font-size: 13px;
+            color: #6b5a63;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="hero">
+    <h1>The Crochet Studio</h1>
+    <div class="subtitle">soft, aesthetic & beginner-friendly crochet patterns</div>
+    <div class="badge">new patterns added regularly</div>
+</div>
+
+<div class="grid">
+
+    <div class="card">
+        <h2>Dinosaur Keychain</h2>
+        <p>small cute crochet dino pattern</p>
+        <button class="button" onclick="location.href='/dino'">Open</button>
+    </div>
+
+    <div class="card">
+        <h2>Penguin Plushie</h2>
+        <p>soft amigurumi beginner pattern</p>
+        <button class="button" onclick="location.href='/penguin'">Open</button>
+    </div>
+
+    <div class="card">
+        <h2>Tote Bag</h2>
+        <p>simple everyday crochet bag</p>
+        <button class="button" onclick="location.href='/tote'">Open</button>
+    </div>
+
+    <div class="card">
+        <h2>Octopus Plushie</h2>
+        <p>mini soft crochet toy</p>
+        <button class="button" onclick="location.href='/octopus'">Open</button>
+    </div>
+
+    <div class="card">
+        <h2>Cherry Keychain</h2>
+        <p>cute decorative crochet charm</p>
+        <button class="button" onclick="location.href='/cherry'">Open</button>
+    </div>
+   
+    <div class="card">
+        <h2>Heart Plushie</h2>
+        <p>no-sew beginner crochet heart</p>
+        <button class="button" onclick="location.href='/pattern1'">Open</button>
+    </div>
+
+    <div class="card">
+        <h2>Amigurumi Whale</h2>
+        <p>Simple and Easy</p>
+        <button class="button" onclick="location.href='/whale'">Open</button>
+    </div>
+
+
+</div>
+
+<div class="footer">
+    made with care • free crochet patterns for beginners
+</div>
+
+</body>
+</html>

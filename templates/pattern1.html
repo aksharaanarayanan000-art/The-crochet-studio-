@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crochet Heart Tutorial</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+
+            /* MATCHED pastel background from homepage */
+            background: linear-gradient(135deg, #fff7f0, #f3f0ff, #f0fff7);
+            color: #4f3b45;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #c77d8b;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #5c4a55;
+            font-size: 16px;
+        }
+
+        .image-box {
+            text-align: center;
+            margin: 20px 0 30px;
+        }
+
+        img {
+            width: 270px;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            filter: brightness(1.1) contrast(1.05) saturate(1.1);
+            transition: 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* MATCHED CARD STYLE */
+        .section {
+            background: #ffffff;
+            padding: 18px 20px;
+            margin: 18px 0;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            border: 1px solid #f0e6f0;
+        }
+
+        h2, h3 {
+            color: #c77d8b;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 14px;
+            color: #5c4a55;
+        }
+
+        .done {
+            text-align: center;
+            font-size: 18px;
+            color: #c77d8b;
+            margin-top: 15px;
+        }
+
+        /* MATCHED BUTTON STYLE */
+        .button {
+            display: block;
+            margin: 35px auto;
+            background: #f4b6a6;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.2s ease;
+            font-size: 14px;
+        }
+
+        .button:hover {
+            background: #e89a86;
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>💖 No-Sew Crochet Heart Tutorial</h1>
+    <div class="subtitle">soft, beginner-friendly plush pattern</div>
+
+    <div class="image-box">
+        <img src="{{ url_for('static', filename='images/pattern1.jpg') }}">
+    </div>
+
+    <div class="section">
+        <h2>Abbreviations:</h2>
+
+        <p>sc - single crochet</p>
+        <p>increase - 2 sc in the same stitch</p>
+        <p>(x) - stitch count for each round</p>
+    </div>
+
+    <div class="section">
+        <h3>LET'S GET STARTED!</h3>
+
+        <p><b>1. First piece</b></p>
+        <p>Make a magic ring & chain 1</p>
+        <p><b>Round 1:</b> 6 sc</p>
+        <p><b>Round 2:</b> 2 sc in every stitch (12)</p>
+        <p><b>Round 3:</b> 1 sc in every stitch (12)</p>
+        <p>- Fasten off</p>
+
+        <p><b>2. Second piece</b></p>
+        <p>Repeat the same steps to make another identical piece (do NOT fasten off)</p>
+
+        <p><b>3. Body</b></p>
+        <p><b>Round 4:</b> join both pieces and sc around (24)</p>
+        <p><b>Round 5–8:</b> decrease rounds shaping the heart</p>
+        <p><b>Round 9:</b> tight decreases to close shape</p>
+        <p><b>Round 10:</b> finish and fasten off</p>
+    </div>
+
+    <div class="done">
+        AAAAND… WE’RE DONE!!
+    </div>
+
+    <button class="button" onclick="location.href='/'">
+        Back Home
+    </button>
+
+</div>
+
+</body>
+</html>
